@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d, #00c3ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.grupo, .grupo-consulta {
+  margin-bottom: 12px;
+}
+
+.grupo label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.botoes, .grupo-consulta {
+  display: flex;
+  gap: 8px;
+}
+
+.botoes button, .grupo-consulta button {
+  flex: 1;
+  font-size: 14px;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botoes button:hover, .grupo-consulta button:hover {
+  background: #0056b3;
+}
+
+.consulta {
+  margin-top: 30px;
+}
+
+.mensagem {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  min-height: 20px;
+  color: #d9534f;
+}
+
+.resultado {
+  margin-top: 0px;
+  padding: 0px;
+  background: #eef7fc;
+  border-left: 0px solid #000000;
+  border-radius: 0px;
+  color: #333;
+  font-size: 14px;
+}
+
+.resultado ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resultado li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 500px) {
+  .botoes, .grupo-consulta {
+    flex-direction: column;
+  }
+}

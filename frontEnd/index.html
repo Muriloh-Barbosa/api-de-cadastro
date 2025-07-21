@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro usuário</h1>
+
+    <form id="form-cadastro">
+      <div class="grupo"><label>Nome completo</label><input type="text" id="nomeCompleto"></div>
+      <div class="grupo"><label>CPF</label><input type="text" id="cpf"></div>
+      <div class="grupo"><label>Nascimento</label><input type="date" id="Nascimento"></div>
+      <div class="grupo"><label>Endereço</label><input type="text" id="Endereco"></div>
+      <div class="grupo"><label>Cidade</label><input type="text" id="Cidade"></div>
+      <div class="grupo"><label>Estado</label><input type="text" id="Estado"></div>
+      <div class="grupo"><label>Telefone</label><input type="text" id="Telefone"></div>
+      <div class="grupo"><label>Email</label><input type="email" id="Email"></div>
+      <div class="grupo"><label>Código</label><input type="text" id="Codigo"></div>
+
+      <div class="botoes">
+        <button type="button" id="button-create">Criar</button>
+        <button type="button" id="button-update">Atualizar</button>
+      </div>
+    </form>
+
+    <section class="consulta">
+      <h2>Consultar por CPF</h2>
+      <div class="grupo-consulta">
+        <input type="text" id="cpf-consulta" placeholder="Digite o CPF">
+        <button type="button" id="button-get">Consultar</button>
+      </div>
+    </section>
+
+    <div id="mensagem" class="mensagem"></div>
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
